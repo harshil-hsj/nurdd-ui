@@ -23,17 +23,20 @@ export function PageWrapper({
       showsVerticalScrollIndicator={false}
       contentContainerStyle={[
         styles.container,
-        { padding, backgroundColor: bgColor },
+        { padding, backgroundColor: bgColor, alignItems:'center' },
         contentContainerStyle,
       ]}
     >
-      <Column style={{ flexGrow: 1 }}>
+      <Column style={{ flexGrow: 1, alignItems:"center", width:"100%"}}>
         {heading && (
+           <Column style={{marginBottom:64}}> 
           <Text style={styles.heading}>{heading}</Text>
+          </Column>
         )}
-
         {children}
       </Column>
+      
+
     </ScrollView>
   );
 }
