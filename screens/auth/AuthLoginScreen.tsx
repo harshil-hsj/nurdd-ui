@@ -9,9 +9,7 @@ import LoginBox from '../../components/molecules/LoginBox';
 export function AuthLoginScreen() {
   return (
     <PageWrapper heading="Nurdd" bgColor={Colors.black} padding={24}>
-      
         <LoginBox/>
-
     </PageWrapper>
   );
 }
